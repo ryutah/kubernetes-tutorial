@@ -1,0 +1,8 @@
+FROM golang:1.10-alpine
+
+COPY ./app1 /go/src/app
+
+RUN go install app
+
+CMD app
+
